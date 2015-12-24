@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/case1"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Click button" />
+        <item
+            android:id="@+id/case2"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Click with new views" />
+        <item
+            android:id="@+id/case3"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Case 3" />
+        <item
+            android:id="@+id/case4"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Case 4" />
+    </group>
+
+    <item android:title="Dialog">
+        <menu>
+            <item
+                android:id="@+id/case5"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Case 5" />
+            <item
+                android:id="@+id/case6"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Case 6" />
+        </menu>
+    </item>
+
+</menu>
