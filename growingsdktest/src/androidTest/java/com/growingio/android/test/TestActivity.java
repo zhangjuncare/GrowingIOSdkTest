@@ -155,9 +155,9 @@ public class TestActivity extends ActivityInstrumentationTestCase2<SplashActivit
 
     private void testDataCount() throws Exception {
         expectEvents = GrowingLogUtil.parseLog(R.raw.app_event_flow);
-        assertNotNull(expectEvents);
+        assertNotNull("Preset data read failed", expectEvents);
         events = GrowingLogUtil.parseLogFile(TestApplication.sLogFilePath);
-        assertNotNull(events);
+        assertNotNull("Log file read failed", events);
         assertTrue("Data row " + events.size() + " less than " + EVENT_MAX_COUNT, events.size() >= EVENT_MAX_COUNT);
     }
 

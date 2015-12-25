@@ -42,12 +42,4 @@ public class ListViewActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        View[] views = WindowHelper.getWindowViews();
-        for (View v : views) {
-            Log.i(TAG, v.toString());
-        }
-    }
 }

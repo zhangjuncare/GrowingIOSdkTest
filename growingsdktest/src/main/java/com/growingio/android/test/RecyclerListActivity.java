@@ -39,15 +39,6 @@ public class RecyclerListActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        View[] views = WindowHelper.getWindowViews();
-        for (View v : views) {
-            Log.i(TAG, v.toString());
-        }
-    }
-
     class MyHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         public MyHolder(View itemView) {

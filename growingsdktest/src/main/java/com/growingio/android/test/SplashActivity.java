@@ -26,11 +26,8 @@ public class SplashActivity extends Activity {
             growing.setChannel("growingio_sdk_test_only");
         }
         WindowHelper.init();
-        View[] views = WindowHelper.getWindowViews();
-        for (View v : views) {
-            Log.i(TAG, v.toString());
-        }
     }
+
 
     @Override
     protected void onResume() {
