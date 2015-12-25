@@ -1,5 +1,6 @@
 package com.growingio.android.test;
 
+import android.os.Build;
 import android.test.ActivityInstrumentationTestCase2;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -41,16 +42,27 @@ public class TestActivity extends ActivityInstrumentationTestCase2<SplashActivit
     protected void setUp() throws Exception {
         super.setUp();
         solo = new Solo(getInstrumentation(), getActivity());
+        solo.getConfig().commandLogging = true;
         metrics = getActivity().getResources().getDisplayMetrics();
         GrowingLogUtil.init(getActivity());
+        assertTrue(solo.waitForActivity(SplashActivity.class));
+    }
+
+    @Override
+    protected void tearDown() throws Exception {
+        super.tearDown();
+        solo = null;
     }
 
     public void testPrepareData() throws Exception {
-        solo.waitForActivity(SplashActivity.class);
-        solo.waitForActivity(MainActivity.class);
-        solo.sleep(1000);
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.M) {
+            // com.robotium.solo.Solo.assertCurrentActivity doesn't work on Android M
+            solo.sleep(1000);
+        } else {
+            solo.waitForActivity(MainActivity.class);
+        }
+        solo.sleep(500);
         Log.i(TAG, "simulate data prepared.");
-        solo.assertCurrentActivity("Stay in MainActivity", MainActivity.class);
         testDataCount();
         testFirstVisitEvent();
         testFirstPageEvent();
@@ -76,7 +88,6 @@ public class TestActivity extends ActivityInstrumentationTestCase2<SplashActivit
         assertBaseInfo();
         assertStringMemberEqual("b");
         assertStringMemberEqual("ch");
-        assertStringMemberEqual("db");
     }
 
     private void testFirstPageEvent() throws Exception {
@@ -146,6 +157,6 @@ public class TestActivity extends ActivityInstrumentationTestCase2<SplashActivit
     }
 
     private void assertStringMemberEqual(String member) throws Exception {
-        assertStringMemberEqual(mEvent, mExpect, member);
+        assertStringMemberEqual(mExpect, mEvent, member);
     }
 }

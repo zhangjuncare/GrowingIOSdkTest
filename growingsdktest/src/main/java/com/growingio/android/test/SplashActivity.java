@@ -52,7 +52,13 @@ public class SplashActivity extends Activity {
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         if (requestCode == 10000) {
-            if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            boolean granted = grantResults.length > 0;
+            for (int g : grantResults) {
+                if (g != PackageManager.PERMISSION_GRANTED) {
+                    granted = false;
+                }
+            }
+            if (granted) {
                 startActivity(new Intent(SplashActivity.this, MainActivity.class));
                 finish();
             }
