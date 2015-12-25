@@ -33,7 +33,16 @@ public class TestActivity extends ActivityInstrumentationTestCase2<SplashActivit
     private static final int EVENT_OPEN_DRAWER_CLICK = 9;
     private static final int EVENT_DRAWER_IMPRESSION = 10;
     private static final int EVENT_BUTTON_IN_DRAWER_CLICK = 11;
-    private static final int EVENT_MAX_COUNT = 12;
+    private static final int EVENT_RADIO_BUTTON_CLICK = 12;
+    private static final int EVENT_LIST_VIEW_PAGE = 13;
+    private static final int EVENT_LIST_VIEW_IMPRESSION = 14;
+    private static final int EVENT_LIST_VIEW_THIRD_LINE_CLICK = 15;
+    private static final int EVENT_LIST_VIEW_FIRST_LINE_CLICK = 16;
+    private static final int EVENT_RECYCLER_PAGE = 17;
+    private static final int EVETN_RECYCLER_IMPRESSION = 18;
+    private static final int EVENT_RECYCLER_FIRST_LINE_CLICK = 19;
+    private static final int EVENT_RECYCLER_THIRD_LINE_CLICK = 20;
+    private static final int EVENT_MAX_COUNT = 21;
     private Solo solo;
     private DisplayMetrics metrics;
     private List<JSONObject> events;
@@ -63,22 +72,42 @@ public class TestActivity extends ActivityInstrumentationTestCase2<SplashActivit
     }
 
     public void testPrepareData() throws Exception {
-        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.M) {
-            // com.robotium.solo.Solo.assertCurrentActivity doesn't work on Android M
-            solo.sleep(1000);
-        } else {
-            solo.waitForActivity(MainActivity.class);
-        }
+        waitForActivity(MainActivity.class);
         solo.sleep(500);
         solo.clickOnView(solo.getView(R.id.button));
         solo.sleep(500);
         solo.clickOnView(solo.getView(R.id.button));
         solo.sleep(500);
         clickOnNavigationButton();
-        solo.sleep(1000);
+        solo.sleep(500);
         solo.clickOnText("Click button");
-        solo.sleep(1000);
-        Log.i(TAG, "simulate data prepared.");
+        solo.sleep(500);
+        solo.clickOnView(solo.getView(R.id.radioButton));
+        waitForActivity(ListViewActivity.class);
+        solo.clickInList(3);
+        solo.sleep(500);
+
+        solo.clickInList(1);
+        waitForActivity(RecyclerListActivity.class);
+
+        solo.clickInRecyclerView(0);
+        solo.sleep(200);
+        solo.clickInRecyclerView(2);
+
+        waitForPreparingLog();
+        testDataContent();
+    }
+
+    private void waitForActivity(Class activityClass) {
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.M) {
+            // com.robotium.solo.Solo.assertCurrentActivity doesn't work on Android M
+            solo.sleep(1000);
+        } else {
+            solo.waitForActivity(activityClass);
+        }
+    }
+
+    private void testDataContent() throws Exception {
         testDataCount();
         testCommonVisitEvent(EVENT_FIRST_VISIT, "First Visit");
         testCommonPageEvent(EVENT_FIRST_PAGE, "Splash Page");
@@ -92,6 +121,20 @@ public class TestActivity extends ActivityInstrumentationTestCase2<SplashActivit
         testCommonEvent(EVENT_OPEN_DRAWER_CLICK, "Open Drawer Click");
         testCommonEvent(EVENT_DRAWER_IMPRESSION, "Drawer Impression");
         testCommonEvent(EVENT_BUTTON_IN_DRAWER_CLICK, "Drawer Menu Item Click");
+        testCommonEvent(EVENT_RADIO_BUTTON_CLICK, "RadioButton Click");
+        testCommonPageEvent(EVENT_LIST_VIEW_PAGE, "ListView Page");
+        testCommonEvent(EVENT_LIST_VIEW_IMPRESSION, "ListView Impression");
+        testCommonEvent(EVENT_LIST_VIEW_THIRD_LINE_CLICK, "ListView ThirdLine Click");
+        testCommonEvent(EVENT_LIST_VIEW_FIRST_LINE_CLICK, "ListView FirstLine Click");
+        testCommonPageEvent(EVENT_RECYCLER_PAGE, "Recycler Page");
+        testCommonEvent(EVETN_RECYCLER_IMPRESSION, "Recycler Impression");
+        testCommonEvent(EVENT_RECYCLER_FIRST_LINE_CLICK, "Recycler FirstLine Click");
+        testCommonEvent(EVENT_RECYCLER_THIRD_LINE_CLICK, "Recycler ThirdLine Click");
+    }
+
+    private void waitForPreparingLog() {
+        Log.i(TAG, "simulate data preparing.");
+        solo.sleep(1000);
     }
 
     private void testCommonEvent(int eventIndex, String message) throws Exception {
@@ -113,10 +156,9 @@ public class TestActivity extends ActivityInstrumentationTestCase2<SplashActivit
     private void testDataCount() throws Exception {
         expectEvents = GrowingLogUtil.parseLog(R.raw.app_event_flow);
         assertNotNull(expectEvents);
-        assertEquals("Prepared data count must be " + EVENT_MAX_COUNT, expectEvents.size(), EVENT_MAX_COUNT);
         events = GrowingLogUtil.parseLogFile(TestApplication.sLogFilePath);
         assertNotNull(events);
-        assertTrue("Data row "+events.size()+" less than "+EVENT_MAX_COUNT, events.size() >= EVENT_MAX_COUNT);
+        assertTrue("Data row " + events.size() + " less than " + EVENT_MAX_COUNT, events.size() >= EVENT_MAX_COUNT);
     }
 
     private void testCommonVisitEvent(int eventIndex, String message) throws Exception {
@@ -138,14 +180,14 @@ public class TestActivity extends ActivityInstrumentationTestCase2<SplashActivit
     private void assertXPathEqual(String message) throws Exception {
         JSONArray eventXPath = mEvent.getJSONArray("e");
         JSONArray expectXPath = mExpect.getJSONArray("e");
-        assertEquals(eventXPath.length(), expectXPath.length());
+        assertEquals(message, expectXPath.length(), eventXPath.length());
         for (int i = eventXPath.length() - 1; i >= 0; i--) {
-            JSONObject e = eventXPath.getJSONObject(i);
-            JSONObject x = expectXPath.getJSONObject(i);
-            assertStringMemberEqual(message, e, x, "x");
-            assertStringMemberEqual(message, e, x, "v");
-            assertStringMemberEqual(message, e, x, "n");
-            assertIntMemberEqual(message, e, x, "gi");
+            JSONObject expectObject = expectXPath.getJSONObject(i);
+            JSONObject eventObject = eventXPath.getJSONObject(i);
+            assertStringMemberEqual(message, expectObject, eventObject, "x");
+            assertStringMemberEqual(message, expectObject, eventObject, "v");
+            assertStringMemberEqual(message, expectObject, eventObject, "n");
+            assertIntMemberEqual(message, expectObject, eventObject, "gi");
         }
     }
 
@@ -154,6 +196,7 @@ public class TestActivity extends ActivityInstrumentationTestCase2<SplashActivit
     }
 
     private static final String BASEINFO_PREFIX = "BaseInfo - ";
+
     private void assertBaseInfo(String message) throws Exception {
         assertStringMemberEqual(BASEINFO_PREFIX + message, "p");
         assertStringMemberEqual(BASEINFO_PREFIX + message, "t");

@@ -11,3 +11,12 @@
 10. 点击ActionBar上的显示Drawer按钮触发click事件
 11. 点击Drawer上的第一个按钮“Click button”，触发Drawer收起动画，扫描时统计到Drawer的impression（这是一个bug，应该在10点击时就统计到）
 12. 11中点击触发的click事件
+13. 点击RadioButton触发的click事件
+14. 启动ListViewActivity的page事件
+15. ListViewActivity的impression事件
+16. 点击ListView的第三行触发的click事件
+17. 点击ListView第一行触发的click事件，跳转到RecyclerListActivity
+18. RecyclerListActivity的page事件
+19. RecyclerListActivity的impression事件 
+20. 点击Recycler第一行触发的click事件
+21. 点击Recycler第三行出发的click事件

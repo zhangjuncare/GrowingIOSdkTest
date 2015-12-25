@@ -5,22 +5,16 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
+import android.util.Log;
+import android.view.View;
 
 import com.growingio.android.sdk.collection.GrowingIO;
-import com.growingio.android.test.util.GrowingLogUtil;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.io.File;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
+import com.growingio.android.test.util.WindowHelper;
 
 public class SplashActivity extends Activity {
+
+    private static final String TAG = "Splash";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +24,11 @@ public class SplashActivity extends Activity {
         GrowingIO growing = GrowingIO.startTracing(this, "meaningless_application_id");
         if (growing != null) {
             growing.setChannel("growingio_sdk_test_only");
+        }
+        WindowHelper.init();
+        View[] views = WindowHelper.getWindowViews();
+        for (View v : views) {
+            Log.i(TAG, v.toString());
         }
     }
 
