@@ -1,0 +1,20 @@
+{
+  "s": "809f3ae6-1e52-4978-9ee7-49fa913a49e5",
+  "tm": 1451012951323,
+  "d": "com.growingio.android.test",
+  "p": "SplashActivity",
+  "t": "vst",
+  "b": "native",
+  "l": "zh_CN",
+  "ch": "growingio_sdk_test_only",
+  "sh": 1776,
+  "sw": 1080,
+  "db": "generic",
+  "dm": "5.0.0 - API 21",
+  "ph": 1,
+  "os": "android",
+  "osv": "5.0",
+  "ca": "310-260",
+  "cv": "1.0",
+  "av": "0.8.4-1512241436"
+}

@@ -6,31 +6,34 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <supports-screens
+        android:anyDensity="false"
+        android:resizeable="false"
+        android:requiresSmallestWidthDp="360"
+        android:largestWidthLimitDp="360"
+        android:xlargeScreens="true" />
     <application
         android:name=".TestApplication"
         android:allowBackup="true"
         android:icon="@drawable/splash"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" />
-        <activity
-            android:name=".SplashActivity"
-            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <meta-data
             android:name="com.growingio.android.GConfig.TestMode"
             android:value="true" />
 
+        <activity android:name=".MainActivity" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".RecyclerListActivity" />
+        <activity android:name=".ActivityWithDialog" />
     </application>
 
 </manifest>

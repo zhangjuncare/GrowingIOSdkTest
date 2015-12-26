@@ -14,7 +14,7 @@ import com.growingio.android.test.util.WindowHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListViewActivity extends AppCompatActivity {
+public class ListViewActivity extends BaseActivity {
 
     private static final String TAG = "ListActivity";
 
@@ -24,30 +24,16 @@ public class ListViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_view);
         ListView listview = (ListView) findViewById(R.id.test_listview);
         List<String> data = new ArrayList<>(41);
-        data.add("Start RecyclerListActivity");
         for (int i = 0; i < 40; i++) {
-            data.add("ListView item " + (i + 2));
+            data.add("ListView item " + (i + 1));
         }
         listview.setAdapter(new ArrayAdapter<String>(this, R.layout.simple_list_item, R.id.text_item, data));
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0) {
-                    startActivity(new Intent(ListViewActivity.this, RecyclerListActivity.class));
-                    finish();
-                } else {
-                    Log.i(TAG, "Click on ListView item " + position);
-                }
+                Log.i(TAG, "Click on ListView item " + position);
             }
         });
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        View[] views = WindowHelper.getWindowViews();
-        for (View v : views) {
-            Log.i(TAG, v.toString());
-        }
-    }
 }

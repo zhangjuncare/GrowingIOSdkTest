@@ -1,6 +1,5 @@
 package com.growingio.android.test;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -9,9 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.growingio.android.test.util.WindowHelper;
-
-public class RecyclerListActivity extends AppCompatActivity {
+public class RecyclerListActivity extends BaseActivity {
 
     private static final String TAG = "RecyclerList";
 
@@ -37,15 +34,6 @@ public class RecyclerListActivity extends AppCompatActivity {
             }
         });
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        View[] views = WindowHelper.getWindowViews();
-        for (View v : views) {
-            Log.i(TAG, v.toString());
-        }
     }
 
     class MyHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
