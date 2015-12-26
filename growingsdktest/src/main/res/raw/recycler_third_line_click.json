@@ -1,0 +1,27 @@
+{
+  "s": "02d6ff84-1866-4d82-b4fc-654b2ae1f128",
+  "tm": 1451130700808,
+  "d": "com.growingio.android.test",
+  "p": "RecyclerListActivity",
+  "t": "clck",
+  "ptm": 1451130694517,
+  "e": [
+    {
+      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/RecyclerView[0]/LinearLayout[-]",
+      "n": "LinearLayout",
+      "gi": 8,
+      "tm": 1451130694711,
+      "idx": 2,
+      "v": ""
+    },
+    {
+      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/RecyclerView[0]/LinearLayout[-]/TextView[0]",
+      "n": "TextView",
+      "gi": 9,
+      "tm": 1451130694711,
+      "idx": 2,
+      "v": "Recycler Item 3",
+      "en": "text_item"
+    }
+  ]
+}

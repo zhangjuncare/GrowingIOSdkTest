@@ -1,6 +1,5 @@
 package com.growingio.android.test;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -9,9 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.growingio.android.test.util.WindowHelper;
-
-public class RecyclerListActivity extends AppCompatActivity {
+public class RecyclerListActivity extends BaseActivity {
 
     private static final String TAG = "RecyclerList";
 
