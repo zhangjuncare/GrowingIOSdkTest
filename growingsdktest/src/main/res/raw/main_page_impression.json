@@ -6,35 +6,7 @@
   "t": "imp",
   "ptm": 1451129167502,
   "e": [
-    {
-      "x": "MainWindow/LinearLayout[0]",
-      "n": "LinearLayout",
-      "gi": 0,
-      "tm": 1451129167568,
-      "v": ""
-    },
-    {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]",
-      "n": "FrameLayout",
-      "gi": 1,
-      "tm": 1451129167568,
-      "v": "",
-      "en": "content"
-    },
-    {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]",
-      "n": "RelativeLayout",
-      "gi": 2,
-      "tm": 1451129167568,
-      "v": ""
-    },
-    {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]",
-      "n": "LinearLayout",
-      "gi": 3,
-      "tm": 1451129167568,
-      "v": ""
-    },
+
     {
       "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/TextView[0]",
       "n": "TextView",
@@ -84,13 +56,6 @@
       "en": "textView3"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/LinearLayout[6]",
-      "n": "LinearLayout",
-      "gi": 10,
-      "tm": 1451129167568,
-      "v": ""
-    },
-    {
       "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/LinearLayout[6]/TextView[0]",
       "n": "TextView",
       "gi": 11,
@@ -114,13 +79,7 @@
       "v": "test text 6",
       "en": "textView6"
     },
-    {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/FrameLayout[7]",
-      "n": "FrameLayout",
-      "gi": 14,
-      "tm": 1451129167568,
-      "v": ""
-    },
+
     {
       "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/FrameLayout[7]/ImageView[0]",
       "n": "ImageView",

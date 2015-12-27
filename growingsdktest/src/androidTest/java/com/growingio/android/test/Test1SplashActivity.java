@@ -9,7 +9,7 @@ public class Test1SplashActivity extends ActivityTestBase {
         super(SplashActivity.class);
     }
 
-    public void test1SplashPage() throws Exception {
+    public void test_SplashActivity_Show_GenPageEvent() throws Exception {
         pollEventFromLog();
         setExpectEvent(R.raw.splash_page_event);
         testCommonPageEvent("Splash Page");
@@ -17,5 +17,8 @@ public class Test1SplashActivity extends ActivityTestBase {
         setExpectEvent(R.raw.splash_impression);
         testCommonEvent("Splash Impression");
     }
+
+
+
 
 }
