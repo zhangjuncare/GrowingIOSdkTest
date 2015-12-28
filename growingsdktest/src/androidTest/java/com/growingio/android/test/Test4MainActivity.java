@@ -36,4 +36,19 @@ public class Test4MainActivity extends ActivityTestBase {
         testCommonEvent("ChangeText Button Click");
     }
 
+    public void test3ClickShowDialog() throws Exception {
+        assertPageEvent();
+        solo.clickOnView(solo.getView(R.id.switch1));
+        pollEventFromLog();
+        setExpectEvent(R.raw.switch_button_click);
+        testCommonEvent("SwitchButton Click");
+        pollEventFromLog();
+        setExpectEvent(R.raw.click_show_dialog_impression);
+        testCommonEvent("Click Show Dialog Impression");
+        solo.clickOnScreen(metrics.widthPixels / 2f, metrics.heightPixels / 2f);
+        pollEventFromLog();
+        setExpectEvent(R.raw.imageview_in_dialog_click);
+        testCommonEvent("Click in Dialog");
+    }
+
 }

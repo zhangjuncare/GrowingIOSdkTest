@@ -1,0 +1,16 @@
+{
+  "ptm": 1451297619707,
+  "d": "com.growingio.android.test",
+  "tm": 1451297644005,
+  "e": [
+    {
+      "n": "ImageView",
+      "v": "WaterDrop",
+      "tm": 1451297644005,
+      "x": "DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/FrameLayout[2]/FrameLayout[0]/ImageView[0]"
+    }
+  ],
+  "t": "clck",
+  "s": "2d867254-dfd5-4093-8bae-25032cebc141",
+  "p": "MainActivity"
+}

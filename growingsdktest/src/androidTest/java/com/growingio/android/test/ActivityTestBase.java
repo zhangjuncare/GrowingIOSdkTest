@@ -97,7 +97,7 @@ abstract class ActivityTestBase extends ActivityInstrumentationTestCase2 {
     protected void assertXPathEqual(String message) throws Exception {
         JSONArray eventXPath = mEvent.getJSONArray("e");
         JSONArray expectXPath = mExpect.getJSONArray("e");
-        assertEquals(message, expectXPath.length(), eventXPath.length());
+        assertEquals(message + " Node Count", expectXPath.length(), eventXPath.length());
         for (int i = eventXPath.length() - 1; i >= 0; i--) {
             JSONObject expectObject = expectXPath.getJSONObject(i);
             JSONObject eventObject = eventXPath.getJSONObject(i);
