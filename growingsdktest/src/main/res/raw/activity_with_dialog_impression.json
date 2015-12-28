@@ -1,48 +1,16 @@
 {
-  "s": "0dbbc519-0be7-4dc9-b470-b4d13b153977",
-  "tm": 1451137874038,
+  "ptm": 1451307259147,
   "d": "com.growingio.android.test",
-  "p": "ActivityWithDialog",
-  "t": "imp",
-  "ptm": 1451137873854,
+  "tm": 1451307259257,
   "e": [
     {
-      "x": "MainWindow/LinearLayout[0]",
-      "n": "LinearLayout",
-      "gi": 0,
-      "tm": 1451137874037,
-      "v": ""
-    },
-    {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]",
-      "n": "FrameLayout",
-      "gi": 1,
-      "tm": 1451137874037,
-      "v": "",
-      "en": "content"
-    },
-    {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]",
-      "n": "RelativeLayout",
-      "gi": 2,
-      "tm": 1451137874037,
-      "v": ""
-    },
-    {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ImageView[0]",
       "n": "ImageView",
-      "gi": 3,
-      "tm": 1451137874037,
       "v": "",
-      "en": "splash_image"
-    },
-    {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ProgressBar[1]",
-      "n": "ProgressBar",
-      "gi": 4,
-      "tm": 1451137874038,
-      "v": "",
-      "en": "progressBar"
+      "tm": 1451307259263,
+      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ImageView[0]"
     }
-  ]
+  ],
+  "t": "imp",
+  "s": "a97a8e09-0bc4-40bc-afc0-b2853a9226e9",
+  "p": "ActivityWithDialog"
 }

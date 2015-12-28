@@ -1,0 +1,16 @@
+{
+  "ptm": 1451307604876,
+  "d": "com.growingio.android.test",
+  "tm": 1451307609634,
+  "e": [
+    {
+      "n": "Button",
+      "v": "Negative",
+      "tm": 1451307609634,
+      "x": "DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[3]/LinearLayout[0]/Button[0]"
+    }
+  ],
+  "t": "clck",
+  "s": "f077c54f-9d28-4c4c-8119-d5c32fbd7ad7",
+  "p": "ActivityWithDialog"
+}

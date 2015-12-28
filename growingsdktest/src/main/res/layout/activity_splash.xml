@@ -19,5 +19,6 @@
         android:layout_height="140dp"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="76dp" />
+        android:layout_marginBottom="76dp"
+        android:visibility="gone"/>
 </RelativeLayout>

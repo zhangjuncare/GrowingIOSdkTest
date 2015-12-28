@@ -11,12 +11,12 @@ public class ActivityWithDialog extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        new AlertDialog.Builder(this).setTitle("Dialog title")
+        AlertDialog dialog = new AlertDialog.Builder(this).setTitle("Dialog title")
                 .setMessage("this is dialog message")
                 .setPositiveButton("Positive", null)
                 .setNegativeButton("Negative", null)
                 .setNeutralButton("Neutral", null)
-                .create()
-                .show();
+                .create();
+        dialog.show();
     }
 }
