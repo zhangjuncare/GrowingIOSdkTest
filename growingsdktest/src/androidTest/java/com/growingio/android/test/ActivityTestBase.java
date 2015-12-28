@@ -16,8 +16,7 @@ import java.util.Queue;
  * Created by lishaojie on 15/12/26.
  */
 abstract class ActivityTestBase extends ActivityInstrumentationTestCase2 {
-
-    String TAG;
+    public static final String TAG = ActivityTestBase.class.getSimpleName();
 
     protected Solo solo;
     protected DisplayMetrics metrics;
@@ -29,7 +28,6 @@ abstract class ActivityTestBase extends ActivityInstrumentationTestCase2 {
 
     public ActivityTestBase(Class activityClass) {
         super(activityClass);
-        TAG = this.getClass().getSimpleName();
     }
 
     @Override
@@ -86,8 +84,9 @@ abstract class ActivityTestBase extends ActivityInstrumentationTestCase2 {
     protected void testCommonPageEvent(String message) throws Exception {
         assertBaseInfo(message);
         assertStringMemberEqual(message + " Title", "tl");
-        assertStringMemberEqual(message + " ReferPage", "rp");
+//        assertStringMemberEqual(message + " ReferPage", "rp");
     }
+
 
     protected void testCommonEvent(String message) throws Exception {
         assertBaseInfo(message);
@@ -104,12 +103,7 @@ abstract class ActivityTestBase extends ActivityInstrumentationTestCase2 {
             assertStringMemberEqual(message + " XPATH", expectObject, eventObject, "x");
             assertStringMemberEqual(message + " Value", expectObject, eventObject, "v");
             assertStringMemberEqual(message + " Class", expectObject, eventObject, "n");
-            assertIntMemberEqual(message + " GlobalIndex", expectObject, eventObject, "gi");
         }
-    }
-
-    protected void assertIntMemberEqual(String message, JSONObject e, JSONObject x, String member) throws Exception {
-        assertEquals(message, e.getInt(member), x.getInt(member));
     }
 
     protected void assertBaseInfo(String message) throws Exception {
