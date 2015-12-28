@@ -36,7 +36,7 @@ public class Test2ListViewActivity extends ActivityTestBase {
 
     public void test3SmoothScroll() throws Exception {
         assertPageEvent();
-        dragListItemBy(-3.5f);
+        dragListItemBy(-3.6f);
         pollEventFromLog();
         setExpectEvent(R.raw.listview_scroll_impression);
         testCommonEvent("ListView Scroll Down");

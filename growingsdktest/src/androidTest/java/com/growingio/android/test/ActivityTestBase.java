@@ -98,10 +98,15 @@ abstract class ActivityTestBase extends ActivityInstrumentationTestCase2 {
         assertStringMemberEqual(message + " Title", "tl");
     }
 
-
     protected void testCommonEvent(String message) throws Exception {
         assertBaseInfo(message);
         assertXPathEqual(message);
+    }
+
+    protected void testEvent(String msg, int resId) throws Exception {
+        pollEventFromLog();
+        setExpectEvent(resId);
+        testCommonEvent(msg);
     }
 
     protected void assertXPathEqual(String message) throws Exception {
