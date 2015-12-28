@@ -36,7 +36,7 @@ public class Test3RecyclerListActivity extends ActivityTestBase {
 
     public void test3SmoothScroll() throws Exception {
         assertPageEvent();
-        dragListItemBy(-3.5f);
+        dragListItemBy(-3.6f);
         pollEventFromLog();
         setExpectEvent(R.raw.recycler_scroll_impression);
         testCommonEvent("Recycler Scroll Down");
