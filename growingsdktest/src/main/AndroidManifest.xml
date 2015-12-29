@@ -30,6 +30,9 @@
             android:name="com.growingio.android.GConfig.TestMode"
             android:value="true" />
 
+        <meta-data
+            android:name="com.growingio.android.GConfig.EnableTagEdit"
+            android:value="true"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".RecyclerListActivity" />

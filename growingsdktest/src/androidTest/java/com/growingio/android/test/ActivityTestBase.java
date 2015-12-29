@@ -59,6 +59,12 @@ abstract class ActivityTestBase extends ActivityInstrumentationTestCase2 {
         dragCenterInScreen(0, (int) (count * listItemHeight));
     }
 
+    protected void testEventWith(int resID, String message) throws Exception {
+        pollEventFromLog();
+        setExpectEvent(resID);
+        testCommonEvent(message);
+    }
+
     protected void setExpectEvent(int rawID) {
         mExpect = GrowingLogUtil.getInstance().parseLog(rawID);
     }

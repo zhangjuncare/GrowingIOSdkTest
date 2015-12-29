@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
 public class MainActivity extends BaseActivity {
@@ -48,6 +49,16 @@ public class MainActivity extends BaseActivity {
                         dialog.dismiss();
                     }
                 });
+            }
+        });
+        findViewById(R.id.imageView2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu menu = new PopupMenu(MainActivity.this, v);
+                menu.getMenu().add(0, 0, 0, "Item 1");
+                menu.getMenu().add(0, 0, 1, "Item 2");
+                menu.getMenu().add(0, 0, 2, "Item 3");
+                menu.show();
             }
         });
     }
