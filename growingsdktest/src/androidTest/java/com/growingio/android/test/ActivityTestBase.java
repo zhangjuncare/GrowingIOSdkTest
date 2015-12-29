@@ -96,7 +96,6 @@ abstract class ActivityTestBase extends ActivityInstrumentationTestCase2 {
     protected void testCommonPageEvent(String message) throws Exception {
         assertBaseInfo(message);
         assertStringMemberEqual(message + " Title", "tl");
-//        assertStringMemberEqual(message + " ReferPage", "rp");
     }
 
 
