@@ -20,10 +20,10 @@ public class Test6PopupMenu extends ActivityTestBase {
     public void test1PopupMenu() throws Exception {
         assertPageEvent();
         solo.clickOnView(solo.getView(R.id.imageView2));
-        testEventWith(R.raw.imageview_in_main_page_click, "ImageView In Main Page Click");
-        testEventWith(R.raw.popupmenu_impression, "PopupMenu Impression");
+        testCommonEventWith(R.raw.imageview_in_main_page_click, "ImageView In Main Page Click");
+        testCommonEventWith(R.raw.popupmenu_impression, "PopupMenu Impression");
         solo.clickOnText("Item 2");
-        testEventWith(R.raw.popupmenu_second_item_click, "PopupMenu Second Item Click");
+        testCommonEventWith(R.raw.popupmenu_second_item_click, "PopupMenu Second Item Click");
     }
 
 }

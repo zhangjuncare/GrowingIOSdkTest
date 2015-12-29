@@ -1,0 +1,46 @@
+{
+  "ptm": 1451389253670,
+  "d": "com.growingio.android.test",
+  "tm": 1451389253779,
+  "e": [
+    {
+      "n": "TextView",
+      "v": "Large Text",
+      "tm": 1451389253780,
+      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/LinearLayout[0]/LinearLayout[0]/LinearLayout[0]/TextView[0]"
+    },
+    {
+      "n": "Button",
+      "v": "show popup window",
+      "tm": 1451389253781,
+      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/LinearLayout[0]/LinearLayout[0]/LinearLayout[0]/Button[1]"
+    },
+    {
+      "n": "TextView",
+      "v": "Large Text",
+      "tm": 1451389253781,
+      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/LinearLayout[0]/LinearLayout[0]/LinearLayout[1]/TextView[0]"
+    },
+    {
+      "n": "Button",
+      "v": "do nothing",
+      "tm": 1451389253781,
+      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/LinearLayout[0]/LinearLayout[0]/LinearLayout[1]/Button[1]"
+    },
+    {
+      "n": "TextView",
+      "v": "Medium Text",
+      "tm": 1451389253781,
+      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/LinearLayout[0]/LinearLayout[1]/LinearLayout[1]/TextView[0]"
+    },
+    {
+      "n": "CheckBox",
+      "v": "New CheckBox",
+      "tm": 1451389253781,
+      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/LinearLayout[0]/LinearLayout[1]/LinearLayout[1]/CheckBox[1]"
+    }
+  ],
+  "t": "imp",
+  "s": "e3703de4-9fbf-4dea-90d2-4c6da7853ab2",
+  "p": "PopupWindowActivity"
+}

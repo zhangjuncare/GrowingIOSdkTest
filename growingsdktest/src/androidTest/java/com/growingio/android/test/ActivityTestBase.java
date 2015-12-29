@@ -59,10 +59,16 @@ abstract class ActivityTestBase extends ActivityInstrumentationTestCase2 {
         dragCenterInScreen(0, (int) (count * listItemHeight));
     }
 
-    protected void testEventWith(int resID, String message) throws Exception {
+    protected void testCommonEventWith(int resID, String message) throws Exception {
         pollEventFromLog();
         setExpectEvent(resID);
         testCommonEvent(message);
+    }
+
+    protected void testPageEventWith(int resID, String message) throws Exception {
+        pollEventFromLog();
+        setExpectEvent(resID);
+        testCommonPageEvent(message);
     }
 
     protected void setExpectEvent(int rawID) {
