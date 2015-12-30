@@ -31,9 +31,14 @@ public class ListViewActivity extends BaseActivity {
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.i(TAG, "Click on ListView item " + position);
+                Log.i(TAG, "Click on ListView item " + position + " hasFocusable " + view.hasFocusable());
+
             }
         });
+    }
+
+    public void onTextClick(View view) {
+        Log.d(TAG, "Click on view "+view);
     }
 
 }

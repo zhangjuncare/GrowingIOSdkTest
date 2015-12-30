@@ -83,5 +83,7 @@ public class TestApplication extends Application {
                 Log.i(TAG, "destroyed " + activity);
             }
         });
+
+
     }
 }

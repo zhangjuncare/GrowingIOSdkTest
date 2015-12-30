@@ -12,5 +12,6 @@
         android:id="@+id/test_listview"
         android:divider="@color/colorPrimary"
         android:layout_width="match_parent"
+        android:background="@drawable/fancy_color"
         android:layout_height="match_parent"/>
 </RelativeLayout>

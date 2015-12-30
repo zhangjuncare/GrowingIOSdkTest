@@ -1,6 +1,7 @@
 package com.growingio.android.test;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -35,6 +36,18 @@ public class PopupWindowActivity extends BaseActivity {
                     }
                 });
                 window.showAsDropDown(v);
+            }
+        });
+        findViewById(R.id.top_layout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "click on top layout");
+            }
+        });
+        findViewById(R.id.top_left_layout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "click on top left layout");
             }
         });
     }

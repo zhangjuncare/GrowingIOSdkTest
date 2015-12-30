@@ -76,7 +76,7 @@ abstract class ActivityTestBase extends ActivityInstrumentationTestCase2 {
     }
 
     protected void pollEventFromLog() throws Exception {
-        solo.sleep(1000);
+        solo.sleep(500);
         mEvent = GrowingLogUtil.getInstance().pollEvent();
         if (TextUtils.equals("vst", mEvent.optString("t"))) {
             JSONObject currentExpect = mExpect;

@@ -9,9 +9,11 @@ import com.growingio.android.sdk.collection.GrowingIO;
  * Created by lishaojie on 15/12/26.
  */
 public class BaseActivity extends Activity {
+    protected String TAG;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TAG = this.getClass().getSimpleName();
         GrowingIO growing = GrowingIO.startTracing(this, "meaningless_application_id");
         if (growing != null) {
             growing.setChannel("growingio_sdk_test_only");

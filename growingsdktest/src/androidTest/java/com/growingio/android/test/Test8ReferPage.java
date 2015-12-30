@@ -17,5 +17,6 @@ public class Test8ReferPage extends ActivityTestBase {
         testPageEventWith(R.raw.popupwindow_page_event, "PopupWindow Page");
         assertEquals(mEvent.getString("rp"), "SplashActivity");
         testCommonEventWith(R.raw.popupwindow_page_impression, "PopupWindow Page Impression");
+        solo.getCurrentActivity().finish();
     }
 }
