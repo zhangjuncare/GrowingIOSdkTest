@@ -12,9 +12,10 @@ public class Test7PopupWindow extends ActivityTestBase {
         testPageEventWith(R.raw.popupwindow_page_event, "PopupWindow Page");
         testCommonEventWith(R.raw.popupwindow_page_impression, "PopupWindow Page Impression");
         solo.clickOnText("show popup window");
+        solo.sleep(500);
+        solo.clickOnView(solo.getView(R.id.splash_image));
         testCommonEventWith(R.raw.show_popupwindow_click, "Show PopupWindow Click");
         testCommonEventWith(R.raw.popupwindow_impression, "PopupWindow Impression");
-        solo.clickOnView(solo.getView(R.id.splash_image));
         testCommonEventWith(R.raw.imageview_in_popupwindow_click, "ImageView In PopupWindow Click");
     }
 

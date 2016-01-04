@@ -21,7 +21,7 @@ abstract class ActivityTestBase extends ActivityInstrumentationTestCase2 {
     protected Solo solo;
     protected DisplayMetrics metrics;
     protected int listItemHeight;
-    protected String sessionID;
+    protected static String sessionID;
     protected JSONObject mEvent;
     protected JSONObject mExpect;
     protected Queue<JSONObject> mExpectList;
