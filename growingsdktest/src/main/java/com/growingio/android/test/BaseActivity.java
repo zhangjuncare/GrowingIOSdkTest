@@ -14,7 +14,7 @@ public class BaseActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TAG = this.getClass().getSimpleName();
-        GrowingIO growing = GrowingIO.startTracing(this, "meaningless_application_id");
+        GrowingIO growing = GrowingIO.startTracing(this, "92927f034cc5407dbdfb786f023bda58");
         if (growing != null) {
             growing.setChannel("growingio_sdk_test_only");
         }
