@@ -3,8 +3,8 @@ package com.growingio.android.test;
 /**
  * Created by lishaojie on 15/12/29.
  */
-public class Test6PopupMenu extends ActivityTestBase {
-    public Test6PopupMenu() {
+public class Test_a_PopupMenu extends ActivityTestBase {
+    public Test_a_PopupMenu() {
         super(MainActivity.class);
     }
 
