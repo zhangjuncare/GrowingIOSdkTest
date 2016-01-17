@@ -1,0 +1,17 @@
+{
+  "s": "250af430-2708-4f8d-ba86-d37895d46ebd",
+  "tm": 1453013634842,
+  "d": "com.growingio.android.test",
+  "p": "BannerActivity",
+  "t": "clck",
+  "ptm": 1453013630469,
+  "e": [
+    {
+      "x": "MainWindow\/LinearLayout[0]\/FrameLayout[1]\/RelativeLayout[0]\/ViewPager[0]\/ImageView[-]",
+      "n": "ImageView",
+      "tm": 1453013634842,
+      "idx": 2,
+      "v": "描述3"
+    }
+  ]
+}

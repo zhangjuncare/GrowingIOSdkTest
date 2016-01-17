@@ -20,6 +20,17 @@
         android:icon="@drawable/splash"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.growingio.android.GConfig.TestMode"
+            android:value="true"/>
+        <meta-data
+            android:name="com.growingio.android.GConfig.EnableTagEdit"
+            android:value="true"/>
+        <meta-data
+            android:name="com.growingio.android.GConfig.SessionInterval"
+            android:value="3000"/>
+
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -29,21 +40,11 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="com.growingio.android.GConfig.TestMode"
-            android:value="true"/>
-
-        <meta-data
-            android:name="com.growingio.android.GConfig.EnableTagEdit"
-            android:value="true"/>
-
-        <meta-data
-            android:name="com.growingio.android.GConfig.SessionInterval"
-            android:value="3000"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
 
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -53,6 +54,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
+
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
@@ -60,6 +62,7 @@
         <activity android:name=".RecyclerListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
 
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -69,6 +72,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
+
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
@@ -76,6 +80,7 @@
         <activity android:name=".PopupWindowActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
 
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -85,11 +90,30 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
+
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:name=".ExpandableListViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BannerActivity"
+            android:label="@string/title_activity_banner"
+            android:theme="@style/AppTheme">
+            <action android:name="android.intent.action.MAIN"/>
+
+            <category android:name="android.intent.category.DEFAULT"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </activity>
+        <activity android:name=".ScrollerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

@@ -1,0 +1,28 @@
+{
+  "s": "3c32d62f-39a3-4c92-8106-43ede7be5a5e",
+  "tm": 1453015435737,
+  "d": "com.growingio.android.test",
+  "p": "ScrollerActivity",
+  "t": "imp",
+  "ptm": 1453015435314,
+  "e": [
+    {
+      "x": "MainWindow\/LinearLayout[0]\/FrameLayout[1]\/ScrollView[0]\/LinearLayout[0]\/ImageView[0]",
+      "n": "ImageView",
+      "tm": 1453015435737,
+      "v": "描述1"
+    },
+    {
+      "x": "MainWindow\/LinearLayout[0]\/FrameLayout[1]\/ScrollView[0]\/LinearLayout[0]\/ImageView[1]",
+      "n": "ImageView",
+      "tm": 1453015435737,
+      "v": "描述2"
+    },
+    {
+      "x": "MainWindow\/LinearLayout[0]\/FrameLayout[1]\/ScrollView[0]\/LinearLayout[0]\/ImageView[2]",
+      "n": "ImageView",
+      "tm": 1453015435737,
+      "v": "描述3"
+    }
+  ]
+}
