@@ -20,6 +20,16 @@
         android:icon="@drawable/splash"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
+        <activity
+            android:label="SplashActivity"
+            android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="com.growingio.android.GConfig.TestMode"
@@ -31,17 +41,9 @@
             android:name="com.growingio.android.GConfig.SessionInterval"
             android:value="3000"/>
 
-        <activity android:name=".SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-
-
-        <activity android:name=".MainActivity">
+        <activity
+            android:label="MainActivity"
+            android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -50,7 +52,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ListViewActivity">
+        <activity 
+            android:label="ListViewActivity"
+            android:name=".ListViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -59,7 +63,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".RecyclerListActivity">
+        <activity 
+            android:label="RecyclerListActivity"
+            android:name=".RecyclerListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -68,7 +74,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityWithDialog">
+        <activity 
+            android:label="ActivityWithDialog"
+            android:name=".ActivityWithDialog">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -77,7 +85,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".PopupWindowActivity">
+        <activity 
+            android:label="PopupWindowActivity"
+            android:name=".PopupWindowActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -86,7 +96,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ComplexListViewActivity">
+        <activity 
+            android:label="ComplexListViewActivity"
+            android:name=".ComplexListViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
