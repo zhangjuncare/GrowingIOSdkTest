@@ -16,12 +16,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
 
 /**
  * Created by lishaojie on 15/12/24.
@@ -73,6 +70,17 @@ public class GrowingLogUtil {
 
     public JSONObject pollEvent() throws IOException, JSONException {
         String newLine = mEventLogReader.readLine();
+        int retryCount = 5;
+        while (newLine == null) {
+            try {
+                Thread.sleep(1000);
+                newLine = mEventLogReader.readLine();
+                if (--retryCount == 0) {
+                    break;
+                }
+            } catch (InterruptedException ignored) {
+            }
+        }
         if (newLine != null) {
             mEventLogQueue.add(new JSONObject(newLine.substring(EVENT_LOG_LINE_PREFIX_LENGTH)));
         }
