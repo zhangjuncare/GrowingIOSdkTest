@@ -70,7 +70,7 @@ public class GrowingLogUtil {
 
     public JSONObject pollEvent() throws IOException, JSONException {
         String newLine = mEventLogReader.readLine();
-        int retryCount = 5;
+        int retryCount = 15;
         while (newLine == null) {
             try {
                 Thread.sleep(1000);
