@@ -35,7 +35,7 @@ public class Test9SessionIDChange extends ActivityTestBase {
     protected void tearDown() throws Exception {
         super.tearDown();
         if (this.toString().contains("test1SaveChangedSessionID")) {
-            solo.sleep(3000);
+            solo.sleep(4000);
         }
     }
 }

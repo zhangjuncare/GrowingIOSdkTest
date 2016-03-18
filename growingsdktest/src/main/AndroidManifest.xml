@@ -32,17 +32,14 @@
         </activity>
 
         <meta-data
-            android:name="com.growingio.android.GConfig.TestMode"
+            android:name="com.growingio.android.GConfig.LocalMode"
             android:value="true"/>
         <meta-data
             android:name="com.growingio.android.GConfig.EnableDebugLogging"
             android:value="true"/>
         <meta-data
-            android:name="com.growingio.android.GConfig.EnableTagEdit"
-            android:value="true"/>
-        <meta-data
             android:name="com.growingio.android.GConfig.SessionInterval"
-            android:value="3000"/>
+            android:value="2000"/>
 
         <activity
             android:label="MainActivity"
