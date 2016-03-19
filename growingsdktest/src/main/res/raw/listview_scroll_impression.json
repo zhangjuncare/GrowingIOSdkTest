@@ -7,7 +7,7 @@
   "ptm": 1451130990707,
   "e": [
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]",
       "n": "LinearLayout",
       "gi": 24,
       "tm": 1451130996936,
@@ -15,7 +15,7 @@
       "v": ""
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]/TextView[0]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]/TextView[0]",
       "n": "TextView",
       "gi": 25,
       "tm": 1451130996936,
@@ -24,7 +24,7 @@
       "en": "text_item"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]",
       "n": "LinearLayout",
       "gi": 26,
       "tm": 1451130996936,
@@ -32,7 +32,7 @@
       "v": ""
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]/TextView[0]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]/TextView[0]",
       "n": "TextView",
       "gi": 27,
       "tm": 1451130996936,
@@ -41,7 +41,7 @@
       "en": "text_item"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]",
       "n": "LinearLayout",
       "gi": 28,
       "tm": 1451130996937,
@@ -49,7 +49,7 @@
       "v": ""
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]/TextView[0]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]/TextView[0]",
       "n": "TextView",
       "gi": 29,
       "tm": 1451130996937,
@@ -58,7 +58,7 @@
       "en": "text_item"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]",
       "n": "LinearLayout",
       "gi": 30,
       "tm": 1451130996937,
@@ -66,7 +66,7 @@
       "v": ""
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]/TextView[0]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]/TextView[0]",
       "n": "TextView",
       "gi": 31,
       "tm": 1451130996937,

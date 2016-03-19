@@ -7,7 +7,7 @@
       "n": "ImageView",
       "v": "Water drop",
       "tm": 1451385029941,
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/FrameLayout[7]/ImageView[0]"
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/FrameLayout[7]/ImageView[0]"
     }
   ],
   "t": "clck",

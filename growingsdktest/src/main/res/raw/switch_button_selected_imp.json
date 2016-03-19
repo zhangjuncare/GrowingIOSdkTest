@@ -7,7 +7,7 @@
       "n": "Switch",
       "v": "test switch",
       "tm": 1451297639214,
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/Switch.checked[3]"
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/Switch.checked[3]"
     }
   ],
   "t": "imp",

@@ -7,10 +7,10 @@
       "n": "Button",
       "v": "show popup window",
       "tm": 1451389256249,
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/LinearLayout[0]/LinearLayout[0]/LinearLayout[0]/Button[1]"
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/LinearLayout[0]/LinearLayout[0]/LinearLayout[0]/Button[1]"
     }
   ],
   "t": "clck",
   "s": "e3703de4-9fbf-4dea-90d2-4c6da7853ab2",
-  "p": "PopupWindowActivity"
+  "p": "/PopupWindowActivity"
 }

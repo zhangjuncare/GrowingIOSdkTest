@@ -7,13 +7,13 @@
   "ptm": 1453015435314,
   "e": [
     {
-      "x": "MainWindow\/LinearLayout[0]\/FrameLayout[1]\/ScrollView[0]\/LinearLayout[0]\/ImageView[3]",
+      "x": "/MainWindow\/LinearLayout[0]\/FrameLayout[1]\/ScrollView[0]\/LinearLayout[0]\/ImageView[3]",
       "n": "ImageView",
       "tm": 1453015552481,
       "v": "描述4"
     },
     {
-      "x": "MainWindow\/LinearLayout[0]\/FrameLayout[1]\/ScrollView[0]\/LinearLayout[0]\/ImageView[4]",
+      "x": "/MainWindow\/LinearLayout[0]\/FrameLayout[1]\/ScrollView[0]\/LinearLayout[0]\/ImageView[4]",
       "n": "ImageView",
       "tm": 1453015552481,
       "v": "描述5"

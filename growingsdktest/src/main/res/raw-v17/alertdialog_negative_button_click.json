@@ -7,7 +7,7 @@
       "n": "Button",
       "v": "Negative",
       "tm": 1451307609634,
-      "x": "DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[3]/LinearLayout[0]/Button[0]"
+      "x": "/DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[3]/LinearLayout[0]/Button[0]"
     }
   ],
   "t": "clck",

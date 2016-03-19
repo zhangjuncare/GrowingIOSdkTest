@@ -7,7 +7,7 @@
   "ptm": 1451311499081,
   "e": [
     {
-      "x": "DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[3]/Button[2]",
+      "x": "/DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[3]/Button[2]",
       "n": "Button",
       "tm": 1451311504034,
       "v": "Negative"

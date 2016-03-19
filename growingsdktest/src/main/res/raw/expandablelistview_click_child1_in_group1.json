@@ -7,13 +7,13 @@
   "ptm": 1451312119591,
   "e": [
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/ExpandableListView[0]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/ExpandableListView[0]",
       "n": "ExpandableListView",
       "tm": 1451312135614,
       "v": ""
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/ExpandableListView[0]/ELVG[1]/ELVC[-]/TextView[0]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/ExpandableListView[0]/ELVG[1]/ELVC[-]/TextView[0]",
       "n": "TextView",
       "tm": 1451312135619,
       "idx": 1,

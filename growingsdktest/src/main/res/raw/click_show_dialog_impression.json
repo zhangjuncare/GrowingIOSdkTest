@@ -7,7 +7,7 @@
       "n": "ImageView",
       "v": "WaterDrop",
       "tm": 1451297639413,
-      "x": "DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/FrameLayout[2]/FrameLayout[0]/ImageView[0]"
+      "x": "/DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/FrameLayout[2]/FrameLayout[0]/ImageView[0]"
     }
   ],
   "t": "imp",

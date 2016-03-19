@@ -7,7 +7,7 @@
   "ptm": 1451131244913,
   "e": [
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ImageView[0]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ImageView[0]",
       "n": "ImageView",
       "tm": 1451131245053,
       "v": ""

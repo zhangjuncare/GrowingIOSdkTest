@@ -7,31 +7,31 @@
       "n": "DialogTitle",
       "v": "Dialog title",
       "tm": 1451307259256,
-      "x": "DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[0]/LinearLayout[1]/DialogTitle[1]"
+      "x": "/DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[0]/LinearLayout[1]/DialogTitle[1]"
     },
     {
       "n": "TextView",
       "v": "this is dialog message",
       "tm": 1451307259256,
-      "x": "DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[1]/ScrollView[0]/TextView[0]"
+      "x": "/DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[1]/ScrollView[0]/TextView[0]"
     },
     {
       "n": "Button",
       "v": "Negative",
       "tm": 1451307259256,
-      "x": "DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[3]/LinearLayout[0]/Button[0]"
+      "x": "/DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[3]/LinearLayout[0]/Button[0]"
     },
     {
       "n": "Button",
       "v": "Neutral",
       "tm": 1451307259256,
-      "x": "DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[3]/LinearLayout[0]/Button[1]"
+      "x": "/DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[3]/LinearLayout[0]/Button[1]"
     },
     {
       "n": "Button",
       "v": "Positive",
       "tm": 1451307259256,
-      "x": "DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[3]/LinearLayout[0]/Button[2]"
+      "x": "/DialogWindow/FrameLayout[0]/FrameLayout[0]/LinearLayout[0]/LinearLayout[3]/LinearLayout[0]/Button[2]"
     }
   ],
   "t": "imp",

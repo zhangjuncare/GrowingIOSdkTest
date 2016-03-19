@@ -4,7 +4,7 @@
   "tm": 1451385031631,
   "e": [
     {
-      "x": "PopupWindow/DropDownListView[0]",
+      "x": "/PopupWindow/DropDownListView[0]",
       "n": "DropDownListView",
       "tm": 1451476692322,
       "v": ""
@@ -14,14 +14,14 @@
       "v": "",
       "tm": 1451385031631,
       "idx": 1,
-      "x": "PopupWindow/DropDownListView[0]/ListMenuItemView[-]"
+      "x": "/PopupWindow/DropDownListView[0]/ListMenuItemView[-]"
     },
     {
       "n": "TextView",
       "v": "Item 2",
       "tm": 1451385031631,
       "idx": 1,
-      "x": "PopupWindow/DropDownListView[0]/ListMenuItemView[-]/RelativeLayout[0]/TextView[0]"
+      "x": "/PopupWindow/DropDownListView[0]/ListMenuItemView[-]/RelativeLayout[0]/TextView[0]"
     }
   ],
   "t": "clck",

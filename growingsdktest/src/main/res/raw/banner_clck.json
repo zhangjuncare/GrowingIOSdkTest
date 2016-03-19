@@ -7,7 +7,7 @@
   "ptm": 1453013630469,
   "e": [
     {
-      "x": "MainWindow\/LinearLayout[0]\/FrameLayout[1]\/RelativeLayout[0]\/ViewPager[0]\/ImageView[-]",
+      "x": "/MainWindow\/LinearLayout[0]\/FrameLayout[1]\/RelativeLayout[0]\/ViewPager[0]\/ImageView[-]",
       "n": "ImageView",
       "tm": 1453013634842,
       "idx": 2,

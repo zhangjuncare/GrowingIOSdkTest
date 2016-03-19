@@ -7,7 +7,7 @@
   "ptm": 1451129167502,
   "e": [
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/Button[1]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/Button[1]",
       "n": "Button",
       "gi": 5,
       "tm": 1451129167568,

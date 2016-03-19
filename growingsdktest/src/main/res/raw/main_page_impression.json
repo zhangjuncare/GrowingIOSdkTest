@@ -8,7 +8,7 @@
   "e": [
 
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/TextView[0]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/TextView[0]",
       "n": "TextView",
       "gi": 4,
       "tm": 1451129167568,
@@ -16,7 +16,7 @@
       "en": "textView2"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/Button[1]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/Button[1]",
       "n": "Button",
       "gi": 5,
       "tm": 1451129167568,
@@ -24,7 +24,7 @@
       "en": "button"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/RadioButton[2]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/RadioButton[2]",
       "n": "RadioButton",
       "gi": 6,
       "tm": 1451129167568,
@@ -32,7 +32,7 @@
       "en": "radioButton"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/Switch[3]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/Switch[3]",
       "n": "Switch",
       "gi": 7,
       "tm": 1451129167568,
@@ -40,7 +40,7 @@
       "en": "switch1"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/ToggleButton[4]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/ToggleButton[4]",
       "n": "ToggleButton",
       "gi": 8,
       "tm": 1451129167568,
@@ -48,7 +48,7 @@
       "en": "toggleButton"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/TextView[5]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/TextView[5]",
       "n": "TextView",
       "gi": 9,
       "tm": 1451129167568,
@@ -56,7 +56,7 @@
       "en": "textView3"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/LinearLayout[6]/TextView[0]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/LinearLayout[6]/TextView[0]",
       "n": "TextView",
       "gi": 11,
       "tm": 1451129167568,
@@ -64,7 +64,7 @@
       "en": "textView4"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/LinearLayout[6]/TextView[1]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/LinearLayout[6]/TextView[1]",
       "n": "TextView",
       "gi": 12,
       "tm": 1451129167568,
@@ -72,7 +72,7 @@
       "en": "textView5"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/LinearLayout[6]/TextView[2]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/LinearLayout[6]/TextView[2]",
       "n": "TextView",
       "gi": 13,
       "tm": 1451129167568,
@@ -81,7 +81,7 @@
     },
 
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/FrameLayout[7]/ImageView[0]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/FrameLayout[7]/ImageView[0]",
       "n": "ImageView",
       "gi": 15,
       "tm": 1451129167568,
@@ -89,7 +89,7 @@
       "en": "imageView2"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/FrameLayout[7]/TextView[1]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/LinearLayout[0]/FrameLayout[7]/TextView[1]",
       "n": "TextView",
       "gi": 16,
       "tm": 1451129167569,

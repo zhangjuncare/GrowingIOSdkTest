@@ -7,7 +7,7 @@
       "n": "ImageView",
       "v": "",
       "tm": 1451307259263,
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ImageView[0]"
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ImageView[0]"
     }
   ],
   "t": "imp",

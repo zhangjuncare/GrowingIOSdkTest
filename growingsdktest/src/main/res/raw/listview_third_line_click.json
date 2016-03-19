@@ -7,7 +7,7 @@
   "ptm": 1451129187926,
   "e": [
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]",
       "n": "ListView",
       "gi": 3,
       "tm": 1451129188045,
@@ -15,7 +15,7 @@
       "en": "test_listview"
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]",
       "n": "LinearLayout",
       "gi": 8,
       "tm": 1451129188047,
@@ -23,7 +23,7 @@
       "v": ""
     },
     {
-      "x": "MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]/TextView[0]",
+      "x": "/MainWindow/LinearLayout[0]/FrameLayout[1]/RelativeLayout[0]/ListView[0]/LinearLayout[-]/TextView[0]",
       "n": "TextView",
       "gi": 9,
       "tm": 1451129188047,

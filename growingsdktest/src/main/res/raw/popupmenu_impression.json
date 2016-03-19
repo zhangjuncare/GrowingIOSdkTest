@@ -7,49 +7,49 @@
       "n": "DropDownListView",
       "v": "",
       "tm": 1451385030056,
-      "x": "PopupWindow/DropDownListView[0]"
+      "x": "/PopupWindow/DropDownListView[0]"
     },
     {
       "n": "ListMenuItemView",
       "v": "",
       "tm": 1451385030056,
       "idx": 0,
-      "x": "PopupWindow/DropDownListView[0]/ListMenuItemView[-]"
+      "x": "/PopupWindow/DropDownListView[0]/ListMenuItemView[-]"
     },
     {
       "n": "TextView",
       "v": "Item 1",
       "tm": 1451385030056,
       "idx": 0,
-      "x": "PopupWindow/DropDownListView[0]/ListMenuItemView[-]/RelativeLayout[0]/TextView[0]"
+      "x": "/PopupWindow/DropDownListView[0]/ListMenuItemView[-]/RelativeLayout[0]/TextView[0]"
     },
     {
       "n": "ListMenuItemView",
       "v": "",
       "tm": 1451385030056,
       "idx": 1,
-      "x": "PopupWindow/DropDownListView[0]/ListMenuItemView[-]"
+      "x": "/PopupWindow/DropDownListView[0]/ListMenuItemView[-]"
     },
     {
       "n": "TextView",
       "v": "Item 2",
       "tm": 1451385030056,
       "idx": 1,
-      "x": "PopupWindow/DropDownListView[0]/ListMenuItemView[-]/RelativeLayout[0]/TextView[0]"
+      "x": "/PopupWindow/DropDownListView[0]/ListMenuItemView[-]/RelativeLayout[0]/TextView[0]"
     },
     {
       "n": "ListMenuItemView",
       "v": "",
       "tm": 1451385030056,
       "idx": 2,
-      "x": "PopupWindow/DropDownListView[0]/ListMenuItemView[-]"
+      "x": "/PopupWindow/DropDownListView[0]/ListMenuItemView[-]"
     },
     {
       "n": "TextView",
       "v": "Item 3",
       "tm": 1451385030056,
       "idx": 2,
-      "x": "PopupWindow/DropDownListView[0]/ListMenuItemView[-]/RelativeLayout[0]/TextView[0]"
+      "x": "/PopupWindow/DropDownListView[0]/ListMenuItemView[-]/RelativeLayout[0]/TextView[0]"
     }
   ],
   "t": "imp",
